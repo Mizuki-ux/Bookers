@@ -1,0 +1,53 @@
+
+h1 {
+  line-height: 18px;
+  margin: 33px 25px;
+
+}
+
+th {
+  font-size: 13px;
+  line-height: 18px;
+  margin: 33px;
+}
+
+table {
+  font-size: 13px;
+  margin: 33px;
+}
+
+.text {
+  padding:3px 5px;
+}
+
+.errors {
+  width: 450px;
+  margin: 33px 25px;
+  font-size: 12px;
+}
+.error {
+  font-size: 13px;
+  margin:0 auto;
+}
+
+h3 {
+  /*font-size: 26px;*/
+  line-height: 18px;
+  margin: 33px 25px;
+}
+
+h4 {
+  margin: 0 auto;
+  font-size: 13px;
+  font-weight: normal;
+}
+
+.nil {
+  margin-bottom: 10px;
+ 
+}
+
+.add {
+  margin-bottom: 10px;
+   margin-left: 1.5em;
+}

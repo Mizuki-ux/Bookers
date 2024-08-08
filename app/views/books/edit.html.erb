@@ -1,0 +1,44 @@
+
+<head>
+<%= stylesheet_link_tag 'new.css' %>
+</head>
+
+<div class="errors">
+  <% if @book.errors.any? %>
+   <h2 class="error"> 
+ <%= @book.errors.count %>errors prohibited this book from being saved:
+ </h2>
+  <ul>
+    <% @book.errors.full_messages.each do |message| %>
+      <li><%= message %></li>
+    <% end %>
+  </ul>
+  </div>
+  <% end %>
+   
+<h1>Editing Book</h1>
+
+<%= form_with model: @book, url: update_book_path(@book.id), method: :patch do |f| %>
+
+  <h4 class="add">
+    Title
+    <div >
+  <%= f.text_field :title %>
+    </div>
+  </h4>
+  <h4 class="add">
+    Body
+    <div >
+        <%= f.text_area :body %>
+    </div>
+  </h4>
+  
+    <div class="add">
+      <%= f.submit "Update Book"%>
+    </div>
+<% end %>
+
+    <div class="add">
+<%= link_to "Show", book_path(@book.id) %> |
+<%= link_to "Back", books_path %>
+   </div>
